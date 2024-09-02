@@ -1,55 +1,60 @@
 module testbench ();
-  logic clk
+  logic clk;
 
   always begin
-    clk = 0;
-    # 1;
     clk = 1;
-    # 1;
+    #5;
+    clk = 0;
+    #5;
   end
 
-  
-  typedef enum logic[6:0] {
-    ZERO = 7'b1000000,
-    ONE = 7'b1111001,
-    TWO = 7'b0100100,
-    THREE = 7'b0110000,
-    FOUR = 7'b0011001,
-    FIVE = 7'b0010010,
-    SIX = 7'b0000010,
-    SEVEN = 7'b1111000,
-    EIGHT = 7'b0000000,
-    NINE = 7'b0011000,
-    A = 7'b0001000,
-    B = 7'b0000011,
-    C = 7'b1000110,
-    D = 7'b0100001,
-    E = 7'b0000110,
-    F = 7'b0001110
-    } inputHex;
-
-  inputHex seg;
+  logic [6:0] segOutput;
   logic [3:0] switches;
   logic [2:0] leds;
-  sevenSegmentDecoder display(.inputHex(switches), .segments(seg));
+  sevenSegmentDecoder display (
+      .inputHex(switches),
+      .segments(segOutput)
+  );
+  ledDecoder ledOut (
+      .clk(clk),
+      .switches(switches),
+      .led(leds)
+  );
+
+  int testCounter;
+  int errors;
+
+  logic [6:0] segExpected;
+  logic [1:0] ledsExpected;
+
+  logic [12:0] testVectors [1000:0]; // format will be switches [3:0], segExpected [6:0], ledsExpected[1:0]
 
 
   initial begin
-    switches = 4'h0;
-    switches = 4'h1;
-    switches = 4'h2;
-    switches = 4'h3;
-    switches = 4'h4;
-    switches = 4'h5;
-    switches = 4'h6;
-    switches = 4'h7;
-    switches = 4'h8;
-    switches = 4'h9;
-    switches = 4'hA;
-    switches = 4'hB;
-    switches = 4'hC;
-    switches = 4'hD;
-    switches = 4'hE;
-    switches = 4'hF;
+    $display("reading test vectors");
+    $readmemb("testbench.tv", testVectors);
+    $display(testVectors);
+    testCounter = 0;
+    errors = 0;
+    #2;
+  end
+
+  always @(posedge clk) begin
+    #1;
+    {switches[3:0], segExpected[6:0], ledsExpected[1:0]} = testVectors[testCounter];
+  end
+
+  always @(negedge clk) begin
+    if (segOutput !== segExpected || leds[1:0] !== ledsExpected) begin
+      $display("Error (test %d): inputs = %b ", errors, switches);
+      $display("outputs = %b segment, %b leds, Expected: (%b segment, %b ledsExpected)", segOutput,
+               leds, segExpected, ledsExpected);
+      errors = errors + 1;
+    end
+    testCounter = testCounter + 1;
+    if (testVectors[testCounter] === 13'bx) begin
+      $display("%d tests completed with %d errors", testCounter, errors);
+      $finish;
+    end
   end
 endmodule
