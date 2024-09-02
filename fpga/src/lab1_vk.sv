@@ -3,7 +3,7 @@
 * File Created: August 31, 2024
 * Summary: SystemVerilog for the first E155 lab, controlling 3 LEDs and a 7-segment display with four switch inputs
 */
-module lab1_xx (
+module lab1_vk (
   input logic [3:0] s,
   output logic [2:0] led,
   output logic [6:0] seg
