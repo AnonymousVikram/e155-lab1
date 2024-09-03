@@ -42,7 +42,7 @@ module sevenSegmentDecoder (
      5 6 1
      4   2
        3
-  */
+  */ 
 
   always_comb begin
     case (inputHex)
