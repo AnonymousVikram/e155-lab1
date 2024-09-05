@@ -49,7 +49,7 @@ module testbench ();
     if (segOutput !== segExpected || logicLeds !== ledsExpected) begin
       $display("Error (test %d): inputs = %b ", errors, switches);
       $display("outputs = %b segment, %b leds, Expected: (%b segment, %b ledsExpected)", segOutput,
-               logicLeds, segExpected, ledsExpected);
+               leds, segExpected, ledsExpected);
       errors = errors + 1;
     end
     testCounter = testCounter + 1;

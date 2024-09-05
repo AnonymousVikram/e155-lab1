@@ -11,24 +11,24 @@ cModel Technology
 dC:/Users/vikra/OneDrive - Harvey Mudd College/HMC/SP24/E85/e85-repo/lab10
 vlab1_vk
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1725258745
+Z1 !s110 1725443924
 !i10b 1
-!s100 cS4=^mAcX[M[?jf0DeE=H2
+!s100 iNDjM>:[Wg8QZSn=6f7el2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IbaQS70PDI3KA>zHb1Cdcn2
+INSRI;Z:UEhdU?1Gjo0eD50
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dC:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga
-Z5 w1725242289
+Z5 w1725443006
 Z6 8C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/lab1_vk.sv
 Z7 FC:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/lab1_vk.sv
-!i122 70
-L0 6 15
+!i122 75
+L0 6 28
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1725258745.000000
+Z9 !s108 1725443924.000000
 Z10 !s107 C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/lab1_vk.sv|
 Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/lab1_vk.sv|
 !i113 1
@@ -38,17 +38,17 @@ vledDecoder
 R0
 R1
 !i10b 1
-!s100 BQ=NShgL8G[@;j7gl2ode2
+!s100 2HC=FF?h28XO51i1L4Nz41
 R2
-I:;353W8FZDGRE8@nA6gTG2
+I^l3KRO>KUkmV5MSiVz]J22
 R3
 S1
 R4
 R5
 R6
 R7
-!i122 70
-L0 57 20
+!i122 75
+L0 39 20
 R8
 r1
 !s85 0
@@ -64,24 +64,24 @@ vsevenSegmentDecoder
 R0
 R1
 !i10b 1
-!s100 7n3BHJKVCN_cRg6[N146Z2
+!s100 Hdd?8LCbW[S`bm3Gz^;zL2
 R2
-IK5Al=O_V_nSDSn1j_3DS]1
+IPTB1@lJJAokQHRK8J;QJO3
 R3
 S1
 R4
-R5
-R6
-R7
-!i122 70
-L0 22 34
+w1725442703
+8C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/sevenSegmentDecoder.sv
+FC:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/sevenSegmentDecoder.sv
+!i122 77
+L0 8 27
 R8
 r1
 !s85 0
 31
 R9
-R10
-R11
+!s107 C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/sevenSegmentDecoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/src/sevenSegmentDecoder.sv|
 !i113 1
 R12
 R13
@@ -90,17 +90,17 @@ vtestbench
 R0
 R1
 !i10b 1
-!s100 h3E>5H0ARNTkfJ3]zgJ0U1
+!s100 :S2zEAP0G1G]I8^claeSD3
 R2
-Ik4B7B8028GYz32BiUOW2U2
+IBK`>E=G@OJTMPUal:h?710
 R3
 S1
 R4
-w1725258385
+w1725443921
 8C:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/sim/testbench.sv
 FC:/Users/vikra/OneDrive - Harvey Mudd College/HMC/FA24/E155/Lab 1/fpga/sim/testbench.sv
-!i122 71
-L0 1 60
+!i122 76
+L0 1 61
 R8
 r1
 !s85 0
