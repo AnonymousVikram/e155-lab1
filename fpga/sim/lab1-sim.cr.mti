@@ -1,0 +1,17 @@
+/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv {1 {vlog -work work -vopt -sv -stats=none /home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module lab1_vk
+-- Compiling module sevenSegmentDecoder
+-- Compiling module ledDecoder
+
+Top level modules:
+	lab1_vk
+
+} {} {}} /home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv {1 {vlog -work work -vopt -sv -stats=none /home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}}

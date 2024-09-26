@@ -21,10 +21,10 @@ module lab1_vk (
       .CLKHF  (clk)
   );
 
-  sevenSegmentDecoder segDecoder (
-      .inputHex(s),
-      .segments(seg)
-  );
+    sevenSegmentDecoder segDecoder (
+        .inputHex(s),
+        .segments(seg)
+    );
   ledDecoder ledDecoder (
       .clk(clk),
       .switches(s),
@@ -41,7 +41,7 @@ module ledDecoder (
     input logic [3:0] switches,
     output logic [2:0] led
 );
-  logic [24:0] counter;
+      
   logic ledStatus;
 
   assign led[0] = switches[0] ^ switches[1];

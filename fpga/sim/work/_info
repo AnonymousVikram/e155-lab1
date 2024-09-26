@@ -1,0 +1,146 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/radiant_project
+T_opt
+!s110 1725374410
+VX[OzjDU=_ICX3@DU2IbTd2
+Z2 04 9 4 work testbench fast 0
+=1-000ae431a4f1-66d71fca-2cd5a-2477
+R0
+Z3 !s12f OEM25U3 
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+Z6 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2024.2;79
+R1
+T_opt1
+!s110 1725374715
+VSOh@>EAg>gQdcPo1HU35B1
+R2
+=1-000ae431a4f1-66d720fb-4ec6d-2827
+R0
+R3
+R4
+R5
+R6
+o-quiet -auto_acc_if_foreign -work work +acc
+R7
+n@_opt1
+R8
+vlab1_vk
+Z9 2/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv
+Z10 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z11 !s110 1725374399
+!i10b 1
+!s100 iNDjM>:[Wg8QZSn=6f7el2
+IZzN]`9[T:?ozIDhP]hBgT0
+S1
+Z12 d/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim
+Z13 w1725371705
+Z14 8/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv
+Z15 F/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv
+!i122 1
+L0 6 28
+Z16 VDg1SIo80bB@j0V0VzS_@n1
+Z17 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z18 !s108 1725374399.000000
+Z19 !s107 /home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/src/lab1_vk.sv|
+!i113 0
+Z21 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
+vledDecoder
+R9
+R10
+R11
+!i10b 1
+!s100 XafKjmPR2ZGGBK@jdmz?f0
+I=CgcC^4MHE:[]i`N0XCcj0
+S1
+R12
+R13
+R14
+R15
+!i122 1
+L0 70 20
+R16
+R17
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+R21
+R7
+nled@decoder
+vsevenSegmentDecoder
+R9
+R10
+R11
+!i10b 1
+!s100 A]SFR42@J9=mMkoP8m9Ik2
+IQAY:PVU^jaO5b`a3]O<XK1
+S1
+R12
+R13
+R14
+R15
+!i122 1
+L0 35 34
+R16
+R17
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+R21
+R7
+nseven@segment@decoder
+vtestbench
+2/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv
+R10
+R11
+!i10b 1
+!s100 h3E>5H0ARNTkfJ3]zgJ0U1
+IYz;n_WfAWJk^DXEYW4zKP0
+S1
+R12
+R13
+8/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv
+F/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv
+!i122 0
+L0 1 60
+R16
+R17
+r1
+!s85 0
+31
+R18
+!s107 /home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/anonymousvikram/workspace/e155/e155-work/e155-lab1/fpga/sim/testbench.sv|
+!i113 0
+R21
+R7
